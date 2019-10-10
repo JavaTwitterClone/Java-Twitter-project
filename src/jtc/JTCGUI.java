@@ -47,6 +47,11 @@ public class JTCGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         LogInBtn.setText("Log In");
+        LogInBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogInBtnActionPerformed(evt);
+            }
+        });
 
         LogOFfBtn.setText("Log Off");
         LogOFfBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -56,10 +61,25 @@ public class JTCGUI extends javax.swing.JFrame {
         });
 
         RegisterBtn.setText("Register");
+        RegisterBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegisterBtnActionPerformed(evt);
+            }
+        });
 
         PrivateMessageBtn.setText("Private Messages");
+        PrivateMessageBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PrivateMessageBtnActionPerformed(evt);
+            }
+        });
 
-        SearchFld.setText("SearchTextFld");
+        SearchFld.setText("Search");
+        SearchFld.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SearchFldActionPerformed(evt);
+            }
+        });
 
         FollowingPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
 
@@ -74,10 +94,10 @@ public class JTCGUI extends javax.swing.JFrame {
         );
         FollowingPnlLayout.setVerticalGroup(
             FollowingPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FollowingPnlLayout.createSequentialGroup()
-                .addGap(39, 39, 39)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FollowingPnlLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(UsersFollowSBar, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(32, 32, 32))
         );
 
         UserStatsPnl.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "User Stats", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Papyrus", 0, 18))); // NOI18N
@@ -129,8 +149,18 @@ public class JTCGUI extends javax.swing.JFrame {
         PHashTagLbl.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Most Popular Hashtag", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Lucida Grande", 2, 12))); // NOI18N
 
         SendPmBtn.setText("Send PM");
+        SendPmBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SendPmBtnActionPerformed(evt);
+            }
+        });
 
         TweetBtn.setText("Tweet");
+        TweetBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TweetBtnActionPerformed(evt);
+            }
+        });
 
         JitterLbl.setBackground(new java.awt.Color(153, 153, 153));
         JitterLbl.setFont(new java.awt.Font("Papyrus", 2, 55)); // NOI18N
@@ -233,10 +263,6 @@ public class JTCGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void LogOFfBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOFfBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_LogOFfBtnActionPerformed
 
     /**
      * @param args the command line arguments
