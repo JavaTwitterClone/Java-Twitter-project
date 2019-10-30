@@ -4,8 +4,6 @@
  */
 package jtc;
 
-import java.awt.event.ActionEvent;
-
 /**
  *
  * @author Jared Ren
@@ -59,7 +57,6 @@ public class JTCGUI extends javax.swing.JFrame {
         LogOffBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogOffBtnActionPerformed(evt);
-                actionpPerfomredahdner(evt);
             }
         });
 
@@ -185,8 +182,9 @@ public class JTCGUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(246, 246, 246)
                         .addComponent(SendPmBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
-                        .addComponent(TweetBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(30, 30, 30)
+                        .addComponent(TweetBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -267,44 +265,33 @@ public class JTCGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void actionpPerfomredahdner(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actionpPerfomredahdner
-        
-    }//GEN-LAST:event_actionpPerfomredahdner
-
     private void LogInBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInBtnActionPerformed
-        loginDialog.setModal(true);
-        loginDialog.setSize(346, 179);
-        loginDialog.SetVisible(true);
-        
+        setMo
     }//GEN-LAST:event_LogInBtnActionPerformed
 
+    private void LogOffBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOffBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LogOffBtnActionPerformed
+
     private void RegisterBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterBtnActionPerformed
-        Register.setModal(true);
-        Register.setSize(400, 203);
-        Register.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_RegisterBtnActionPerformed
 
     private void PrivateMessageBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrivateMessageBtnActionPerformed
-        privateMessages.setModal(true);
-        privateMessages.setSize(455, 324);
-        privateMessages.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_PrivateMessageBtnActionPerformed
 
+    private void SearchFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SearchFldActionPerformed
+
     private void SendPmBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SendPmBtnActionPerformed
-        sendPM.setModal(true);
-        sendPM.setSize(455, 324);
-        sendPM.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_SendPmBtnActionPerformed
 
     private void TweetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TweetBtnActionPerformed
-        SendTweet.SetModal(true);
-        SendTweet.setSize(400,300);
-        SendTweet.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_TweetBtnActionPerformed
-
-    private void LogOffBtnActionPerformed(java.awt.event.ActionEvent evt) {                                          
-       JTCGUI.dispose();
-    }                                         
 
     /**
      * @param args the command line arguments
