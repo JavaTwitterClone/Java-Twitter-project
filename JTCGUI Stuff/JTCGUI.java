@@ -4,67 +4,19 @@
  */
 package jtc;
 
-import java.awt.event.ActionEvent;
-
 /**
  *
  * @author Jared Ren
  */
 public class JTCGUI extends javax.swing.JFrame {
-    private javax.swing.JLabel FollowersLbl;
-    private javax.swing.JPanel FollowersPnl;
-    private javax.swing.JScrollBar FollowersSBar;
-    private javax.swing.JLabel FollowingLbl;
-    private javax.swing.JPanel FollowingPnl;
-    private javax.swing.JLabel JitterLbl;
-    private javax.swing.JButton LogInBtn;
-    private javax.swing.JButton LogOffBtn;
-    private javax.swing.JLabel PHashTagLbl;
-    private javax.swing.JButton PrivateMessageBtn;
-    private javax.swing.JButton RegisterBtn;
-    private javax.swing.JTextField SearchFld;
-    private javax.swing.JButton SendPmBtn;
-    private javax.swing.JPanel TweetBoxPnl;
-    private javax.swing.JButton TweetBtn;
-    private javax.swing.JPanel UserStatsPnl;
-    private javax.swing.JScrollBar UsersFollowSBar;
+
     /**
      * Creates new form JTCGUI
      */
     public JTCGUI() {
         initComponents();
-        
     }
-     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JTCGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JTCGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JTCGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JTCGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            JTCGUI jtcgui = new JTCGUI();
-            jtcgui.setVisible(true);
-        });
-    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -105,7 +57,6 @@ public class JTCGUI extends javax.swing.JFrame {
         LogOffBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogOffBtnActionPerformed(evt);
-                actionpPerfomredahdner(evt);
             }
         });
 
@@ -231,8 +182,9 @@ public class JTCGUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(246, 246, 246)
                         .addComponent(SendPmBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
-                        .addComponent(TweetBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(30, 30, 30)
+                        .addComponent(TweetBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -313,53 +265,86 @@ public class JTCGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void actionpPerfomredahdner(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actionpPerfomredahdner
-        
-    }//GEN-LAST:event_actionpPerfomredahdner
-
     private void LogInBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInBtnActionPerformed
-        loginDialog lginDialog = new loginDialog(jtcgui,true);
-        lginDialog.setModal(true);
-        lginDialog.setSize(346, 179);
-        lginDialog.SetVisible(true);
-        
+        setMo
     }//GEN-LAST:event_LogInBtnActionPerformed
 
+    private void LogOffBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOffBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LogOffBtnActionPerformed
+
     private void RegisterBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterBtnActionPerformed
-        Register regBox = new Register(jtcgui, true);
-        regBox.setModal(true);
-        regBox.setSize(400, 203);
-        regBox.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_RegisterBtnActionPerformed
 
     private void PrivateMessageBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrivateMessageBtnActionPerformed
-        privateMessages pmbox = new privateMessages(jtcgui, true);
-        pmbox.setModal(true);
-        pmbox.setSize(455, 324);
-        pmbox.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_PrivateMessageBtnActionPerformed
 
+    private void SearchFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SearchFldActionPerformed
+
     private void SendPmBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SendPmBtnActionPerformed
-        SendPM sendpm = new SendPM(jtcgui, true);
-        sendpm.setModal(true);
-        sendpm.setSize(455, 324);
-        sendpm.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_SendPmBtnActionPerformed
 
     private void TweetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TweetBtnActionPerformed
-        SendTweet sendtweet = new SendTweet(jtcgui, true);
-        sendtweet.setSize(400,300);
-        sendtweet.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_TweetBtnActionPerformed
-
-    private void LogOffBtnActionPerformed(java.awt.event.ActionEvent evt) {                                          
-       jtcgui.dispose();
-    }                                         
 
     /**
      * @param args the command line arguments
      */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(JTCGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(JTCGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(JTCGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(JTCGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
 
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new JTCGUI().setVisible(true);
+            }
+        });
+    }
 
-   
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel FollowersLbl;
+    private javax.swing.JPanel FollowersPnl;
+    private javax.swing.JScrollBar FollowersSBar;
+    private javax.swing.JLabel FollowingLbl;
+    private javax.swing.JPanel FollowingPnl;
+    private javax.swing.JLabel JitterLbl;
+    private javax.swing.JButton LogInBtn;
+    private javax.swing.JButton LogOffBtn;
+    private javax.swing.JLabel PHashTagLbl;
+    private javax.swing.JButton PrivateMessageBtn;
+    private javax.swing.JButton RegisterBtn;
+    private javax.swing.JTextField SearchFld;
+    private javax.swing.JButton SendPmBtn;
+    private javax.swing.JPanel TweetBoxPnl;
+    private javax.swing.JButton TweetBtn;
+    private javax.swing.JPanel UserStatsPnl;
+    private javax.swing.JScrollBar UsersFollowSBar;
+    // End of variables declaration//GEN-END:variables
 }
